@@ -24,13 +24,17 @@
   },
   "homepage": "https://github.com/lacerdaeduardo/periodic_table#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "popper": "^1.0.0",
     "webpack": "^3.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "ejs-loader": "^0.3.0",
     "htmllint-loader": "^2.1.4"
   }
 }

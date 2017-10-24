@@ -1,3 +1,5 @@
-var helloWorld = 'Hello World!';
+import 'bootstrap';
 
-document.getElementById('container').append(helloWorld);
+var welcomeMessage = 'In the future, this is going to be a perioc table!';
+
+document.getElementById('container').append(welcomeMessage);
