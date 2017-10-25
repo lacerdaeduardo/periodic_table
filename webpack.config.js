@@ -1,6 +1,8 @@
 const path = require('path');
 var webpack = require('webpack');
 
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -29,6 +31,10 @@ module.exports = {
         // In case you imported plugins individually, you must also require them here:
         Util: "exports-loader?Util!bootstrap/js/dist/util",
         Dropdown: "exports-loader?Dropdown!bootstrap/js/dist/dropdown"
-      })
+      }),
+      new HtmlWebpackPlugin({
+        title: 'Custom template',
+        template: './src/templates/index.ejs'
+    })
   ]
 };
